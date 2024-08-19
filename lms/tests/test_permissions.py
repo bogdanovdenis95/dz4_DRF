@@ -1,8 +1,9 @@
+#Тесты для проверки взаимодействия с контроллерами с разными правами доступа
 import pytest
 from rest_framework.test import APIClient
 from django.contrib.auth.models import Group
 from lms.models import Course, Lesson
-from users.models import User  # Используйте вашу кастомную модель User
+from users.models import User
 
 @pytest.fixture
 def api_client():
